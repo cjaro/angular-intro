@@ -21,4 +21,8 @@ phirePhiterApp.controller('PhirePhiterController', function(){
     self.people.push(angular.copy(self.newPerson));
   };
 
+  angular.module('PhirePhiterApp', []).controller('PhirePhiterController', function($scope) {
+    $scope.names = self.people;
+});
+
 });
